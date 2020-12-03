@@ -23,7 +23,6 @@ public class WorldController {
   public Continent input(@RequestBody Continent continent){
     return worldService.input_world(continent);
   }
-
   @PutMapping("/continent/{id}")
   public Continent input_country(@RequestBody Continent continent,@PathVariable String id){
     return worldService.insert_country(continent,id);
@@ -55,10 +54,6 @@ public class WorldController {
     return worldService.getCityByName(cityname);
   }
 
-//  @GetMapping("/country/")
-//  public Continent getCountryByName(@PathVariable String countryname){
-//    QContinent
-//  }
 
 //  @PutMapping("/country/{id}")
 //  public Continent insert_country(@RequestBody Countries country, @PathVariable String id){
