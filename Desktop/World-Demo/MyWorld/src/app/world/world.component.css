@@ -1,0 +1,15 @@
+.worldclass{
+    color:black;
+    background-image: url("world-3.jpg");
+    background-size: cover;
+    font-family: 'Courier New';
+    height: 550px;
+    text-align: center;
+}
+.foot{
+    color:black;
+    background-color:whitesmoke;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+}
