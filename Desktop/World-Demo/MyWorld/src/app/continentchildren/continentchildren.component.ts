@@ -10,6 +10,8 @@ export class ContinentchildrenComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
+
 
 }

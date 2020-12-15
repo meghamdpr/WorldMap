@@ -6,8 +6,13 @@ import { WorldchildrenComponent } from './worldchildren/worldchildren.component'
 
 const routes: Routes = [
   {path:'',component:WorldComponent},
-  {path:'World',component:WorldchildrenComponent},
-  {path:'countries',component:ContinentchildrenComponent}
+  {
+    path:'World',
+    component:WorldchildrenComponent,
+    children:[
+      {path:'countries',component:ContinentchildrenComponent}
+    ]
+  },
 ];
 
 @NgModule({

@@ -9,10 +9,16 @@ import { ContinentserviceService } from '../continentservice.service';
 export class WorldComponent implements OnInit {
 
   public result : string[] = [];
+  continents:any;
 
   constructor(private worldservice:ContinentserviceService) { }
 
   ngOnInit():void{
+  }
+
+  getcontinents(){
+    this.worldservice.getContinents()
+    .subscribe((data) =>this.continents=data)
   }
 
 }
