@@ -9,16 +9,13 @@ import { ContinentserviceService } from '../continentservice.service';
 })
 export class WorldchildrenComponent implements OnInit{
 
+  mycontinent:string="Asia";
   continents:any;
   countries:any;
   link:any;
 
   constructor(private worldservice:ContinentserviceService,private route:ActivatedRoute, private router: Router) { }
  
-  // ngOnChanges(changes: SimpleChanges): void {
-  //   throw new Error('Method not implemented.');
-  // }
-
   
   ngOnInit(){
     this.worldservice.getContinents()
@@ -31,10 +28,19 @@ export class WorldchildrenComponent implements OnInit{
   // }
 
   getcountriesdata(item:string){
-    this.link=item;
+    this.mycontinent=item;
+    // this.link=item;
     console.log("entered into countries");
-    console.log(this.link);
-    this.worldservice.getcountries(this.link).subscribe(data=>this.countries=data);
+    console.log(this.mycontinent);
+    this.worldservice.getcountries(this.mycontinent).subscribe(data=>this.countries=data);
     // this.router.navigate(['countries'],{relativeTo:this.route});
+  }
+
+  get continent(){
+    return this.mycontinent;
+  }
+
+  set continent(value){
+    this.mycontinent=value;
   }
 }

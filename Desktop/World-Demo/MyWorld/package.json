@@ -24,6 +24,7 @@
     "@angular/router": "~11.0.3",
     "materialize-css": "^1.0.0-rc.2",
     "rxjs": "~6.6.0",
+    "simplebar-angular": "^2.3.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
   },
@@ -33,6 +34,7 @@
     "@angular/compiler-cli": "~11.0.3",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
+    "@types/simplebar": "^5.1.1",
     "codelyzer": "^6.0.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",

@@ -1,0 +1,8 @@
+#scrollbar{
+    width: 100%;
+    height:100px;
+    overflow-x:hidden;
+    text-align: center;
+    /* margin-left: 500px; */
+    background-color: rgba(153, 236, 232, 0.603);
+}
