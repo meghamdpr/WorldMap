@@ -1,13 +1,13 @@
-/* .worldclass{
+.worldclass{
     color: black;
     background-size: cover;
-    height:1000px;
+    height:500px;
     text-align: center;
     font-size: large;
     font-family: 'Courier New', Courier, monospace;
     background-image: url("https://miro.medium.com/max/3801/1*wIhzDQkzhdSvUq7SDFGdcg.png");
-} */
-.worldclass{
+}
+/* .worldclass{
     color:black;
     background-image: url("https://miro.medium.com/max/3801/1*wIhzDQkzhdSvUq7SDFGdcg.png");
     background-size: cover;
@@ -60,7 +60,7 @@
 .content > mat-card { 
     width: 50px; 
     margin:0px,10px,20px;
-}
+} */
 
 /* section{
     background-image: url("https://miro.medium.com/max/3801/1*wIhzDQkzhdSvUq7SDFGdcg.png");
@@ -73,15 +73,16 @@
     background-color:blue; */
 
 .container{
-    width: 100%;
+    width: auto;
     height: auto;
     padding: 10px;
-    background:rgba(255, 255, 0, 0.274);
-     margin: 100px auto; 
+    background:rgba(231, 231, 221, 0.274);
+    margin: 100px auto; 
     display:flex;
     flex-direction:row;
     justify-content: center;
     flex-wrap: wrap;
+    /* background-image: url("https://miro.medium.com/max/3801/1*wIhzDQkzhdSvUq7SDFGdcg.png"); */
 }
 
 .box{
@@ -92,12 +93,13 @@
     box-sizing: border-box;
     font-size:18px;
     font-weight: bold;
-    color:rgb(255, 238, 0);
+    color:white;
 }
 
 .box:hover{
     transform:scale(1.3);
-    background-color:black;
+    background-color:rgb(245, 234, 234);
+    color:black;
     box-shadow: 2px 2px 2px #000;
     z-index: 2;
 }

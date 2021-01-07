@@ -11,6 +11,7 @@ export class ContinentchildrenComponent implements OnInit {
   // @Input()
   // mycontinent!: string;
   @Input() countries:any;
+  isDisplay=false;
   mycountry:string | undefined;
   states:any;
   constructor(private worldservice:ContinentserviceService) { }
@@ -28,11 +29,13 @@ export class ContinentchildrenComponent implements OnInit {
   // }
 
   getstatesdata(item:string){
+    this.isDisplay=!this.isDisplay;
     this.mycountry=item;
     // this.link=item;
     console.log("entered into states");
     console.log(this.mycountry);
     this.worldservice.getstates(this.mycountry).subscribe((data)=>this.states=data);
+    console.log(this.states);
   }
 
 }

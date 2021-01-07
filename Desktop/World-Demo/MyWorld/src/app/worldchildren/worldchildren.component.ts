@@ -33,7 +33,7 @@ export class WorldchildrenComponent implements OnInit{
     console.log("entered into countries");
     console.log(this.mycontinent);
     this.worldservice.getcountries(this.mycontinent).subscribe(data=>this.countries=data);
-    // this.router.navigate(['countries'],{relativeTo:this.route});
+    this.router.navigate(['countries'],{relativeTo:this.route});
   }
 
   get continent(){

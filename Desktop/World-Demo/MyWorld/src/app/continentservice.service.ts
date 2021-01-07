@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { Icontinent } from 'src/continent';
 import { Region } from './region';
@@ -9,7 +10,6 @@ import { Region } from './region';
 })
 export class ContinentserviceService {
 
-  
   springEndpoint: string | undefined;
   postEndpoint: string | undefined;
   
@@ -30,7 +30,11 @@ export class ContinentserviceService {
     return this.http.get(`${this.springEndpoint}/${country}`);
   }
 
-  postregion(region: Region){
+  postregion(region:Region){
+    // console.log(form.value.parent);
+    // console.log(form.value);
+    console.log(region);
+    console.log(region.parent);
     return this.http.post(`${this.postEndpoint}/${region.parent}`,region,{responseType:'text' as 'json'});
   }
 }

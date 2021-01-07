@@ -8,6 +8,7 @@ import java.util.ArrayList;
 @Document(collection = "world")
 public class WorldModel {
 
+  private String category;
   @Id
   private String place;
   private String parent;
@@ -16,10 +17,19 @@ public class WorldModel {
   public WorldModel() {
   }
 
-  public WorldModel(String place, String parent, ArrayList<String> children) {
+  public WorldModel(String category, String place, String parent, ArrayList<String> children) {
+    this.category = category;
     this.place = place;
     this.parent = parent;
     this.children = children;
+  }
+
+  public String getCategory() {
+    return category;
+  }
+
+  public void setCategory(String category) {
+    this.category = category;
   }
 
   public String getPlace() {

@@ -1,5 +1,5 @@
 body{
-    /* background-image:url("https://wallpapercave.com/uwp/uwp409176.jpeg");
+    /* background-image:url("https://wallpapercave.com/wp/wp2593836.jpg");
     background-size: cover; */
     background-color: rgba(247, 254, 255, 0.185);
 }
@@ -8,7 +8,7 @@ body{
     height: 400px;
 }
 .col-md-3{
-    background: rgba(255, 255, 255, 0.356);
+    background: rgba(255, 255, 255, 0.034);
     padding: 3%;
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
@@ -39,4 +39,9 @@ body{
 }
 .contact-form button:focus{
     box-shadow:none;
+}
+
+label{
+    color: gray;
+    font-size: large;
 }

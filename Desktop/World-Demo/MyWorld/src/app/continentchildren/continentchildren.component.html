@@ -14,7 +14,7 @@
 
 <body >
     <!-- <h1>{{mycontinent}}</h1> -->
-    <!-- <div class="box"> -->
+     <!-- <div class="box">  -->
             <div id="scrollbar">
                 <!-- <ng-container *ngIf="countries.place==mycontinent"> -->
                     <!-- <div *ngFor="let country of countries.children">
@@ -29,14 +29,24 @@
                           </div>
                     </div>  -->
                     <div *ngFor="let country of countries.children">
-                    <button mat-button (click)="getstatesdata(country)">{{country}}</button>
+                    <button mat-button (click)="getstatesdata(country)" >{{country}}</button>
+                    <!-- <mat-nav-list>
+                      <mat-list-item *ngFor="let state of states.children">
+                        <button mat-button>{{state}}</button>
+                      </mat-list-item>
+                    </mat-nav-list> -->
+                    <mat-card [hidden]="isDisplay">
+                      <ul *ngFor="let state of states.children">
+                        <li>{{state}}</li>
+                      </ul>
+                    </mat-card>
                     </div>
               </div>
               <br>
 
               <br>
-              <div>
+              <!-- <div>
                 <app-states [states]="states"></app-states>
-              </div>
-        <!-- </div> -->
+              </div> -->
+        <!-- </div>  -->
 </body>

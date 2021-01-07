@@ -17,10 +17,15 @@
 </head>
 
 <body>
-    <div id="scrollbar">
-        <!-- <h1>STATES</h1> -->
+    <!-- <div id="scrollbar">
+        <h1>STATES</h1> 
         <div *ngFor="let country of states.children">
             <button mat-button >{{country}}</button>
         </div>
-    </div>
+    </div>-->
+    <mat-card [hidden]="isDisplay">
+        <ul *ngFor="let state of states.children">
+          <li>{{state}}</li>
+        </ul>
+      </mat-card>
 </body>
