@@ -8,23 +8,27 @@ We have developed CRUD (CREATE, READ, UPDATE, DELETE) operations for this projec
 We can connect backend with database through "application.properties" file.
 
 #Software Requirements
-	Intelij IDEA (BACK END)
-	Visual Studio code(FRONT END)
-	Mongo dB(database)
-	Postman
+
+1. Intelij IDEA (BACK END)
+2. Visual Studio code(FRONT END)
+3. Mongo dB(database)
+4.	Postman
 
 #System Requirements
-	We recommend: 1.6 GHZ or faster processor.
-	1 GB of RAM
-	Google chrome browser
+
+1. We recommend: 1.6 GHZ or faster processor.
+2. 1 GB of RAM
+3.	Google chrome browser
 
 #Implemented Operations
+
 1.	To retrieve all the inserted data.
 2.	To insert new data.
 3.	To delete data.
 
 #How to run
-	Run by “npm start” command from vs code.
+
+Run by “npm start” command from vs code.
 
 
 #How to test Endpoints
